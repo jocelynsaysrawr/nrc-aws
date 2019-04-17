@@ -1,0 +1,31 @@
+---
+# vars file for roles/vpc
+
+# map of subnets to be built in VPC
+public_vpc_subnets:
+  public-subnet-AZ-A:
+    cidr: 10.23.0.0/24
+    az: "{{ aws_region }}a"
+  public-subnet-AZ-B:
+    cidr: 10.23.1.0/24
+    az: "{{ aws_region }}b"
+  public-subnet-AZ-C:
+    cidr: 10.23.2.0/24
+    az: "{{ aws_region }}c"
+  public-subnet-AZ-D:
+    cidr: 10.23.3.0/24
+    az: "{{ aws_region }}d"
+
+private_vpc_subnets:
+  private-subnet-AZ-A1:
+    cidr: 10.23.10.0/24
+    az: "{{ aws_region }}a"
+  private-subnet-AZ-B1:
+    cidr: 10.23.11.0/24
+    az: "{{ aws_region }}b"
+  private-subnet-AZ-C1:
+    cidr: 10.23.12.0/24
+    az: "{{ aws_region }}c"
+  private-subnet-AZ-D1:
+    cidr: 10.23.13.0/24
+    az: "{{ aws_region }}d"

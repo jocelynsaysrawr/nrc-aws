@@ -1,0 +1,6 @@
+---
+# defaults file for roles/vpc
+
+vpc_name: "NRC VPC"
+vpc_cidr_block: "10.23.0.0/16"
+aws_region: "us-west-2"
