@@ -68,7 +68,7 @@ t.add_resource(ec2.SecurityGroup(
             IpProtocol="tcp",
             FromPort=0,
             ToPort=65535,
-            CidrIp="172.16.0.0/12",
+            CidrIp="10.23.0.0/16",
         ),
         ec2.SecurityGroupRule(
             IpProtocol="tcp",
@@ -122,7 +122,7 @@ t.add_resource(LaunchConfiguration(
         "         --region ",
         Ref('AWS::Region'),
         "\n"])),
-    ImageId='ami-04351e12',
+    ImageId='ami-0054160a688deeb6a',
     KeyName=Ref("KeyPair"),
     SecurityGroups=[Ref("SecurityGroup")],
     IamInstanceProfile=Ref('EC2InstanceProfile'),

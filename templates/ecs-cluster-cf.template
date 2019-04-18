@@ -115,7 +115,7 @@
                 "IamInstanceProfile": {
                     "Ref": "EC2InstanceProfile"
                 },
-                "ImageId": "ami-04351e12",
+                "ImageId": "ami-0054160a688deeb6a",
                 "InstanceType": "t2.micro",
                 "KeyName": {
                     "Ref": "KeyPair"
@@ -302,7 +302,7 @@
                 "GroupDescription": "Allow SSH and private network access",
                 "SecurityGroupIngress": [
                     {
-                        "CidrIp": "172.16.0.0/12",
+                        "CidrIp": "10.23.0.0/16",
                         "FromPort": 0,
                         "IpProtocol": "tcp",
                         "ToPort": 65535
